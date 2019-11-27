@@ -1,7 +1,4 @@
-/*
-Next Step:
-  Return the calculators functionality
-*/
+
 
 import React, {useState, useRef} from 'react';
 import ReactDOM from 'react-dom'
@@ -67,32 +64,31 @@ function App() {
   }
   function changeColors() {
     var found = false;
-    var current = 0;
-    for (var i = 0; i < 16; i++) {
+    // for (var i = 0; i < 16; i++) {
       
-        if (currentColors[i].currentColor !== 0) {
-          for (var j = 0; j < 16; j++) {
-            console.log(currentColors[i].currentColor)
-            found = true;
-              currentColors[(i+1)%16].currentColor = (currentColors[i].currentColor + 1) % 8;
-              // currentColors[i].currentColor = 0;
-              // setCurrentColors(currentColors);
-              i++;
-              i %= 16;
-          }
-          return true;
-        }
-    }
+    //     if (currentColors[i].currentColor !== 0) {
+    //       for (var j = 0; j < 16; j++) {
+    //         console.log(currentColors[i].currentColor)
+    //         found = true;
+    //           currentColors[(i+1)%16].currentColor = (currentColors[i].currentColor + 1) % 8;
+    //           // currentColors[i].currentColor = 0;
+    //           // setCurrentColors(currentColors);
+    //           i++;
+    //           i %= 16;
+    //       }
+    //       return true;
+    //     }
+    // }
     
     return found;
   }
   function incrementColor(num) {
-    currentColors[num].currentColor = (currentColors[num].currentColor + 1) % 8;
-    setCurrentColors(currentColors);
-    // while (true) {
-    changeColors();
-    //   if (!found) {break;}
-    // }
+    // currentColors[num].currentColor = (currentColors[num].currentColor + 1) % 8;
+    // setCurrentColors(currentColors);
+    // // while (true) {
+    // changeColors();
+    // //   if (!found) {break;}
+    // // }
   }
 
   function evaluteOperation() {

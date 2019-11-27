@@ -1,2 +1,2 @@
 # The_Most_Primitive_Calculator
-I made 'The Most Primitive Calculator'
+I made 'The Most Primitive Calculator' with React JS. Pardon the excessive functionality...
